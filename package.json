@@ -1,0 +1,28 @@
+{
+  "name": "task-manager-project",
+  "version": "1.0.0",
+  "description": "Create `package.json`, run create_env and resetDB",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "dev": "nodemon index.js",
+    "resetDB": "node resetDB",
+    "create_env": "copy myENV.env .env"
+  },
+  "//": {
+    "important": "Change 'copy' in create_env to 'cp' if using linux"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "bcrypt": "^5.1.1",
+    "dotenv": "^16.4.5",
+    "express": "^4.19.0",
+    "jsonwebtoken": "^9.0.2",
+    "mongoose": "^8.2.2"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.0"
+  }
+}
